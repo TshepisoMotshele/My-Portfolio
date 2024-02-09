@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Home from './Pages/Home'
-import About from './Pages/About'
-import Contact from './Pages/Contact'
-import Portfolio from './Pages/Portfolio'
-import Acheivement from './Pages/Acheivement'
+import Home from './Pages/HomePage/Home'
+import About from './Pages/AboutPage/About'
+import Contact from './Pages/ContactPage/Contact'
+import Portfolio from './Pages/PortfoliosPage/Portfolio'
+import Acheivement from './Pages/Acheivements/Acheivements'
 import NoPage from './Pages/NoPage'
 
 

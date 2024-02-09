@@ -1,4 +1,4 @@
-import Navigation from "../Compponents/Navigation";
+/*import Navigation from "../Compponents/Navigation";
 
 
 export default function Home() {
@@ -10,4 +10,4 @@ export default function Home() {
             <h2>Home Page</h2>
         </>
     );
-}
+}*/

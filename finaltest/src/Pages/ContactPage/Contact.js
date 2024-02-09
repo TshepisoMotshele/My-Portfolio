@@ -1,4 +1,4 @@
-import Navigation from "../Compponents/Navigation";
+/*import Navigation from "../Compponents/Navigation";
 
 
 
@@ -11,4 +11,4 @@ export default function Contact() {
             <h2>Contact Page</h2>
         </>
     );
-}
+}*/

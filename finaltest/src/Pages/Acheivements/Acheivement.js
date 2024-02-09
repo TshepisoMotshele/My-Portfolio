@@ -1,4 +1,4 @@
-import Navigation from "../Compponents/Navigation";
+/*import Navigation from "../Compponents/Navigation";
 
 
 export default function Acheivement() {
@@ -10,4 +10,4 @@ export default function Acheivement() {
             <h2>Acheivement Page</h2>
         </>
     );
-}
+}*/
