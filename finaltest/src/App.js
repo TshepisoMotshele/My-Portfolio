@@ -5,6 +5,7 @@ import Contact from './Pages/ContactPage/Contact.jsx'
 import Portfolio from './Pages/PortfoliosPage/Portfolio.jsx'
 import Acheivement from './Pages/Acheivements/Acheivements.jsx'
 import NoPage from './Pages/NoPage'
+import 'font-awesome/css/font-awesome.min.css';
 
 
 
