@@ -1,0 +1,46 @@
+.navigation-bar {
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.logo img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.social-links a {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.menu {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover,
+.menu a.active {
+    background-color: #555;
+}
