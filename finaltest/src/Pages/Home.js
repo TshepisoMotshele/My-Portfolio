@@ -1,14 +1,13 @@
 import Navigation from "../Compponents/Navigation";
 
 
-
-
 export default function Home() {
-    return(
+    return (
         <>
-            <header />
+            <header>
+                <Navigation />
+            </header>
             <h2>Home Page</h2>
-        
         </>
-    )
+    );
 }

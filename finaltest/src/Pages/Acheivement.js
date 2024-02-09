@@ -1,14 +1,13 @@
 import Navigation from "../Compponents/Navigation";
 
 
-
-export default function Contact() {
+export default function Acheivement() {
     return (
         <>
             <header>
                 <Navigation />
             </header>
-            <h2>Contact Page</h2>
+            <h2>Acheivement Page</h2>
         </>
     );
 }

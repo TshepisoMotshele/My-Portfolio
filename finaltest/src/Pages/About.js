@@ -3,11 +3,12 @@ import Navigation from "../Compponents/Navigation";
 
 
 export default function About() {
-    return(
+    return (
         <>
-            <header />
+            <header>
+                <Navigation />
+            </header>
             <h2>About Page</h2>
-        
         </>
-    )
+    );
 }
