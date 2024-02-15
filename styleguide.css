@@ -1,0 +1,15 @@
+:root {
+    --heading-font-family: "Inter", Helvetica;
+    --heading-font-size: 40px;
+    --heading-font-style: normal;
+    --heading-font-weight: 600;
+    --heading-letter-spacing: 0px;
+    --heading-line-height: normal;
+    --labels-font-family: "Inter", Helvetica;
+    --labels-font-size: 40px;
+    --labels-font-style: italic;
+    --labels-font-weight: 700;
+    --labels-letter-spacing: 0px;
+    --labels-line-height: normal;
+  }
+  
