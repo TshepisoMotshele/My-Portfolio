@@ -1,32 +1,32 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './Pages/HomePage/Home.jsx'
-import { About } from './Pages/AboutPage/About.jsx'
-import { Contact } from './Pages/ContactPage/Contact.jsx'
-import Portfolio from './Pages/PortfoliosPage/Portfolio.jsx'
-import { Achievement } from './Pages/Achievements/Achievement.jsx'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import "./App.css"
 
-
-import NoPage from './Pages/NoPage'
-import '@fortawesome/fontawesome-free/css/all.css'
-
+import  Home  from './Pages/HomePage/Home.jsx';
+import About from './Pages/AboutPage/About.jsx'
+import Portfolio from './Pages/PortfoliosPage/Portfolio.jsx';
+import { Achievement } from './Pages/Achievements/Achievement';
+import { Contact } from './Pages/ContactPage/Contact';
 
 
 
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <Router>
+      <div>
+        
         <Routes>
-          <Route index element={<Home />} />
-          <Route path="/Home" element={<Home />} />
-          <Route path="/About" element={<About />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/Portfolio" element={<Portfolio />} />
           <Route path="/Achievement" element={<Achievement />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
         </Routes>
-      </BrowserRouter>
-    </div>
-  )
+      </div>
+    </Router>
+  );
 }
+
+export default App;

@@ -17,9 +17,8 @@
   }
   
   .home .overlap-group {
-    height: 1024px;
-    position: relative;
-    width: 1440px;
+    height: 100vh;
+    width: auto;
   }
   
   .home .home-elements {
