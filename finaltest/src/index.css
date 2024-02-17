@@ -1,13 +1,457 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;800&display=swap");
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+* {
+  font-family: "Fira-Code", monospace;
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #21262d !important;
+  color: white !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
 }
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.particle {
+  z-index: -1 !important;
+}
+.App {
+  position: relative;
+  min-height: 100vh;
+}
+
+.home {
+  margin-top: -4rem;
+}
+
+.home-parent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 7rem;
+  width: 50%;
+  height: 100vh;
+}
+
+.homepage-avatar {
+  width: 25%;
+  height: 100vh;
+}
+
+.home-image {
+  align-items: right;
+}
+
+.heading-text {
+  position: relative;
+}
+
+.text-animation {
+  font-size: 2rem;
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.introduction {
+  display: flex;
+}
+
+.intro-text {
+  font-size: large;
+  width: 70%;
+  margin-left: 6rem;
+  font-weight: 800;
+  text-align: justify;
+}
+
+.homeBottom {
+  margin-top: 4rem;
+  margin-bottom: 4rem !important;
+}
+
+.techstack {
+  margin: 3rem 0;
+}
+
+.techstack-row {
+  width: 75%;
+  margin: 0 auto;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0.7, 0.7);
+
+  background-color: #10265ddc;
+
+  padding: 1.5rem 1rem !important;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5) !important;
+}
+.item:hover {
+  transform: scale(0.8, 0.8);
+  transition: all 0.2s ease-in-out;
+}
+.experience-tag {
+  width: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.experience-tag:hover{
+transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  color: #32cd30;
+}
+.Typewriter__wrapper {
+  line-height: 3rem !important;
+}
+
+.Appcontent {
+  /* min-height: 100vh !important; */
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+}
+
+.footer-contact > li {
+  display: flex;
+  justify-content: space-evenly;
+}
+.about-heading {
+  margin-top: 3rem !important;
+  font-family: "Fira Code !important";
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+}
+.about-parent {
+  display: flex;
+  justify-content: space-evenly;
+  height: 60vh;
+}
+
+.about-text {
+  font-size: large;
+  margin-left: 5rem;
+  width: 50%;
+  margin: auto;
+  font-weight: 800;
+}
+
+.about-image {
+  width: 45%;
+}
+
+.github-graph {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.github-button {
+  display: flex;
+  justify-content: space-between;
+}
+.graph-heading {
+  margin-top: 4rem;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+}
+.single-card {
+  transform: scale(0.8, 0.8);
+  box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.4) !important;
+  background: linear-gradient(
+    to right,
+    rgb(182, 244, 146),
+    rgb(51, 139, 147)
+  ) !important;
+  border-radius: 2rem !important;
+  border: 5px solid black !important;
+}
+.single-card-button {
+  background-color: green !important;
+}
+
+.single-card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.6) !important;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.contact-icon {
+  width: 50%;
+  height: auto;
+}
+.contact-text {
+  font-size: xx-large !important;
+}
+
+
+.header-buttons {
+  border-bottom: 5px solid #152b61 !important;
+}
+
+.header-buttons:hover {
+  transform: scale(1.1, 1.1);
+  border-bottom: 5px solid #32cd30 !important;
+  /* background: #32CD30 !important;  */
+}
+
+.footer-left-text {
+  font-family: "Lobster", cursive;
+  font-size: x-large;
+  color: bisque;
+}
+
+.contact-list-item:hover {
+  transform: scale(1.1, 1.1);
+  border: 5 0 5 0 solid skyblue;
+  border-radius: 5rem;
+}
+
+.logo-img {
+  height: 55px;
+  cursor: pointer;
+  margin-top: 5px;
+  margin-right: 2px;
+}
+  .logo-img:hover {
+    transform: scale(1.1);  
+  margin-right: 4px;
+}
+.logo-img2 {
+  height: 55px;
+  margin-top: 5px;
+  transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+ .logo-img2:hover {
+    transform: scale(1.02);
+  margin-right: 2px;
+}
+
+.linktree-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 20px !important;
+  background-color: #32cd30 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.3s !important;
+}
+
+.linktree-button:hover {
+  background-color: #091c4df9 !important;
+  border-radius: 8px;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+  transition: background-color 200ms ease-in-out;
+}
+
+.linktree-icon {
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-size: contain !important ;
+  margin-left: 5px !important;
+  fill: #f2f2f2 !important;
+}
+
+.linktree-button:hover .linktree-icon {
+  fill: #32cd30 !important;
+}
+.socialIcon:hover .freecodecamp {
+  color: black !important;
+}
+.socialIcon:hover .GitHub {
+  color: black !important;
+}
+@media (max-width: 999px) {
+  .logo-img {
+    display: none;
+  }
+  .search {
+    width: 75%;
+  }
+  .techstack-row {
+    width: 100%;
+  }
+  .item {
+    padding: 1rem;
+  }
+}
+
+/* Hide the second logo image for screen width 999px and above */
+@media (min-width: 1000px) {
+  .logo-img2 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  
+  .intro-text{
+ 
+    font-size: 1.2rem !important;
+  }.about-heading {
+    font-size: 2rem !important;
+  }
+  .homeBottom-title {
+    font-size: 2em !important;
+    margin-bottom: 1rem !important;
+  }
+  .home-animation {
+    font-size: 1.8rem !important;
+  }
+  .graph-heading {
+    font-size: 1.5rem;
+  }
+  .introduction {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .home {
+    margin-top: -2.5rem;
+  }
+  .about-text {
+    font-size: 1rem;
+  }
+
+  .intro-text {
+    margin: auto;
+    text-align: justify;
+  }
+  .intro-image {
+    margin: auto;
+  }
+  .footer-contact {
+    display: flex;
+    justify-content: center;
+  }
+  .home-parent {
+    flex-direction: column;
+  }
+  .home-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .homepage-avatar {
+    width: 100%;
+    margin-top: -18rem !important;
+  }
+
+  .downloadPdf {
+    margin-top: 2rem;
+  }
+
+  
+
+  @media screen and (max-width: 499px) {
+    .about-text {
+      font-size: 1rem;
+      width: 60%;
+    }
+    .about-image {
+      width: 35%;
+    }
+
+      .intro-text {
+  font-size: 1rem !important;
+  letter-spacing: 0;
+
+  }
+
+      .homepage-avatar {
+   margin-top: -19rem !important;
+  }
+ .homeBottom-title{
+    font-size: 1.5rem !important;
+  }
+
+  }
+
+
+  @media screen  and(max-width: 399px) {
+
+  .homeBottom-title{
+    font-size: 1.5rem !important;
+  }
+       .homepage-avatar {
+   margin-top: -20rem !important;
+  }
+
+}
+
+}
+
+
+
+  
