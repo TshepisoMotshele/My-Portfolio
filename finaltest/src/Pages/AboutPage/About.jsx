@@ -1,10 +1,9 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-
 import "./about.css";
 
 export const About = () => {
   return (
+    
     <div className="about">
       <div className="overlap-wrapper">
         <div className="overlap">
@@ -83,64 +82,9 @@ export const About = () => {
               </button>
             </div>
             <div className="text-wrapper-13">Absa Younglings</div>
-            <div className="nav-bar">
-  <div className="overlap-2">
-    <div className="rectangle-2" />
-    <NavLink to="/" className="text-wrapper-17" activeClassName="active">Home</NavLink>
-    <NavLink to="/about" className="text-wrapper-18" activeClassName="active">About</NavLink>
-    <NavLink to="/achievements" className="text-wrapper-14" activeClassName="active">Achievements</NavLink>
-    <NavLink to="/contact" className="text-wrapper-15" activeClassName="active">Contact</NavLink>
-    <NavLink to="/portfolio" className="text-wrapper-16" activeClassName="active">Portfolio</NavLink>
-    {/* Add other navigation links as necessary */}
-    <img
-      className="vector"
-      alt="Vector"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c238b940da854aa8e96bcd/img/vector.svg"
-    />
-    <img
-      className="home-svgrepo-com"
-      alt="Home svgrepo com"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c238b940da854aa8e96bcd/img/home-1-svgrepo-com.svg"
-    />
-    <img
-      className="about-information"
-      alt="About information"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c2618037c6cf2659498171/img/about-information-info-help-svgrepo-com.svg"
-    />
-    <img
-      className="portfolio-svgrepo"
-      alt="Portfolio svgrepo"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c238b940da854aa8e96bcd/img/portfolio-svgrepo-com.svg"
-    />
-    <img
-      className="education-svgrepo"
-      alt="Education svgrepo"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c238b940da854aa8e96bcd/img/education-svgrepo-com.svg"
-    />
-    <img
-      className="location-place-pin"
-      alt="Location place pin"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c238b940da854aa8e96bcd/img/location-place-pin-svgrepo-com.svg"
-    />
-    <img
-      className="vector-2"
-      alt="Vector"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c2618037c6cf2659498171/img/vector-1.svg"
-    />
-    <img
-      className="vector-3"
-      alt="Vector"
-      src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c1f95a886b7f388e40c1d9/img/vector-4.svg"
-    />
-    <p className="p">2024 | Designed and Developed By Tshepiso Motshele. | All rights reserved.</p>
-  </div>
-</div>
+           
 
-            <img
-              className="element"
-              alt="Element"
-              src="https://cdn.animaapp.com/projects/65c1f19fe83795b5da57d4a2/releases/65c2618037c6cf2659498171/img/147166387-1@2x.png"
-            />
+            
           </div>
         </div>
       </div>
