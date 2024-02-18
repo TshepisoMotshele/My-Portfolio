@@ -40,13 +40,7 @@ const filteredArticles = projectsData.filter((project) => {
       </p>
       <div className="projectPage-container">
         <div className="projectPage-search">
-          <input
-            type="text"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder="Search project..."
-            className="search"
-          />
+          
         </div>
         <Grid
           className="project-grid"

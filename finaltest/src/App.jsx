@@ -6,12 +6,10 @@ import Contact from "./components/contact/Contact";
 import Project from "./components/project/Project";
 import About from "./components/about/AboutInfo";
 import Footer from "./components/footer/Footer";
-import ParticleBackground from "./components/background/ParticleBackground";
 
 const App = () => {
   return (
     <div className="App">
-      <ParticleBackground className="particle"></ParticleBackground>
       <div className="AppContent">
         <Header />
         <Routes>
