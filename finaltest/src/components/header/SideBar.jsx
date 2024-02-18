@@ -213,7 +213,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
             <Fade left>
               <NavLink
-                to="https://iam-dev.hashnode.dev/"
+                to="#"
                 smooth={true}
                 spy="true"
                 duration={2000}

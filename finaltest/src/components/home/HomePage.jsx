@@ -98,7 +98,7 @@ const HomePage = () => {
                   textDecoration: "",
                 }}
               >
-                TSHEPISO MOTSHELE
+                TSHEPISO MOTSHELE...
               </span>
             </h1>
           </div>

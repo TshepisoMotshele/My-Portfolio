@@ -78,7 +78,7 @@ const Header = () => {
               },
             }}
           >
-            Tshepiso Motshele
+            Tshepiso Motshel
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

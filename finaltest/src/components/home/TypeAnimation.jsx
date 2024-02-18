@@ -7,9 +7,7 @@ const TypeAnimation = () => {
       <Typewriter
         options={{
           strings: [
-            "Software Engineer",
             "Full Stack Developer",
-            "DSA Enthusiast",
             "Curious Learner",
           ],
           autoStart: true,

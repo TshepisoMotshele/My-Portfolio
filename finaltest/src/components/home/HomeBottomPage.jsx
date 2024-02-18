@@ -19,7 +19,7 @@ const HomeBottomPage = () => {
       <div className="introduction">
         <div className="intro-text">
           <p>
-            I am Tshepiso Mottshele, a young professional
+            I am Tshepiso Motshele, a young professional
             good, <span style={{ color: "#32CD30" }}>problem solving </span>
             skills & passionate about Full-stack development
           </p>

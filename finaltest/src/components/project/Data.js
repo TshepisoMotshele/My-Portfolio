@@ -35,7 +35,6 @@ export const projectsData = [
       "Chakra UI",
       "Node.js",
       "Express.js",
-      "MongoDB",
       "Socket.io",
     ],
     code: "https://github.com/MehraDevesh2022/chat-mind",

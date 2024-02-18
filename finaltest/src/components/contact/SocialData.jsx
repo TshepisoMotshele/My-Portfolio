@@ -1,4 +1,4 @@
 export const socialsData = {
-  github: "#",
-  linkedIn: "#",
+  github: "####",
+  linkedIn: "###",
 };

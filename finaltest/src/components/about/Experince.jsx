@@ -25,21 +25,21 @@ function Experience() {
     },
     {
       id: 3,
-      company: "The Sparks Foundation",
-      jobtitle: "Web Development Intern",
+      company: "****",
+      jobtitle: "#",
       startYear: "May 2022 ",
       endYear: " Jun 2022",
       links:
-        "https://drive.google.com/file/d/1PDnFM5IYxz-KcsdFtLcNCOWe9kioRnxr/view?usp=sharing",
+        "#",
     },
     {
       id: 4,
-      company: "NPSEI",
-      jobtitle: "Frontend Developer Intern",
+      company: "***",
+      jobtitle: "#",
       startYear: "Aug 2021 ",
       endYear: " Nov 2021",
       links:
-        "https://drive.google.com/file/d/1UQsz7aq8ZtF_WrgZNMQlaNK1xA-kjO15/view?usp=drive_link",
+        "###",
     },
   ];
 
