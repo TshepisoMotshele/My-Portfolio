@@ -7,8 +7,8 @@ function Experience() {
   const experienceData = [
     {
       id: 1,
-      company: "Indusfly Technologies Pvt. Ltd.",
-      jobtitle: "Fullstack Developer Intern",
+      company: "ABSA Younglings",
+      jobtitle: "Junior fullstack Developer",
       startYear: "May 2023 ",
       endYear: "Oct 2023",
       links:

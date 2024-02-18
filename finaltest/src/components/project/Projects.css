@@ -39,7 +39,7 @@
     padding: 1.9rem 2.5rem;
     font-weight: 500;
     font-size: 0.9rem;
-    background-color: #10265ddc;
+    background-color: #2bc1dbdc;
     box-shadow: inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060;
     text-shadow: 2px 2px 1px #000000;
 }
@@ -51,7 +51,7 @@
 }
 
 .search:focus {
-    border: 4px solid #32CD30;
+    border: 4px solid #f263be;
     outline: none;
 }
 
@@ -107,14 +107,14 @@
 .project-card-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #10265ddc;
+    background-color: #2bc1dbdc;
     color: #fff;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
 }
 
 .project-card-link:hover {
-    background-color: #32CD30;
+    background-color: #f263be;
 }
 
 @media screen and  (max-width : 999px){

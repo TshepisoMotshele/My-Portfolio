@@ -11,7 +11,7 @@
     position: relative;
     cursor: pointer;
     overflow: hidden;
-    background-color: #10265ddc;
+    background-color: #2bc1dbdc;
     
 }
 
@@ -57,14 +57,14 @@
     cursor: pointer;
     text-decoration: none;
     transition: transform 0.5s 0.3s;
-    background-color: #152b61;
+    background-color: #2bc1dbdc;
          box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
          padding: 1rem;
          border-radius: 50%;
          color: white;
 }
 .project--showcaseBtn > a:hover {
-  background-color: #32CD30;
+  background-color: #f263be;
   color: white;
 
 }
@@ -88,7 +88,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-         background: #152b61;
+         background: #2bc1dbdc;
             color: white;
             font-size: 1.1rem;
      font-weight: 700;
@@ -115,7 +115,7 @@
     transition: transform 0.5s 0.3s;
     padding: 0.825rem;
     color: white;
-       background: #152b61;
+       background: #2bc1dbdc;
       text-shadow: 5px 6px 20px rgba(0, 0, 0, 0.3);
       font-weight: 600;
         box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);

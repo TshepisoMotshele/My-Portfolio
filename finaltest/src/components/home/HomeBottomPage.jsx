@@ -19,7 +19,7 @@ const HomeBottomPage = () => {
       <div className="introduction">
         <div className="intro-text">
           <p>
-            I am Devesh Mehra, A Computer Science and Engineering Graduate with
+            I am Tshepiso Mottshele, a young professional
             good, <span style={{ color: "#32CD30" }}>problem solving </span>
             skills & passionate about Full-stack development
           </p>
@@ -32,9 +32,9 @@ const HomeBottomPage = () => {
           </p>
           <br />
           <p>
-            I am also proficient in C, Java and love{" "}
+            I am also proficient in JavaScript, Python and love{" "}
             <span style={{ color: "#32CD30" }}>solving problems</span> involving
-            data structures and algorithms.
+            ?????????.
           </p>
           <br />
           <p>

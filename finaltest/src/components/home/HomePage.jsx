@@ -98,7 +98,7 @@ const HomePage = () => {
                   textDecoration: "",
                 }}
               >
-                DEVESH MEHRA
+                TSHEPISO MOTSHELE
               </span>
             </h1>
           </div>

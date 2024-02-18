@@ -163,7 +163,7 @@ const Contact = () => {
          from_name: name,
          from_email: email,
          message: message,
-         to_email: "mehra.devesh2022@gmail.com",
+         to_email: "tshepisomotshele9@gmail.com",
        };
 
        emailjs
@@ -354,15 +354,7 @@ const Contact = () => {
                   {contactsData.email}
                 </p>
               </a>
-              <a
-                href={`tel:${contactsData.phone}`}
-                className="personal-details"
-              >
-                <div className={classes.detailsIcon}>
-                  <FiPhone />
-                </div>
-                <p style={{ color: "white" }}>{contactsData.phone}</p>
-              </a>
+            
 
               <a
                 className="personal-details"

@@ -35,8 +35,7 @@ const filteredArticles = projectsData.filter((project) => {
         My Recent <span style={{ color: "#32CD30" }}>Projects</span>
       </h1>
       <p>
-        These are some of the projects that I have been working on in my own
-        time!
+        These are some of the projects that I have worked on!
       </p>
       <div className="projectPage-container">
         <div className="projectPage-search">
