@@ -5,25 +5,15 @@ import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 
-import {
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-  FaFreeCodeCamp,
-  FaHackerrank,
-  FaWhatsapp,
-} from "react-icons/fa";
-import { SiLeetcode, SiHashnode } from "react-icons/si";
+
 
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
-import { FiPhone, FiAtSign } from "react-icons/fi";
-import { HiOutlineLocationMarker } from "react-icons/hi";
+
 import contactsGreen from "../../assets/contactsGreen.svg";
 
  
-import { socialsData } from "./SocialData";
-import { contactsData } from "./ContactData";
+
+
 import "./Contacts.css";
 import emailjs from "emailjs-com";
 // import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
@@ -220,7 +210,7 @@ const Contact = () => {
           mind??
         </h1>
         <p style={{ textAlign: "center" }}>
-          Or just want to discuss a project? Contact Me using any of the links!!
+          Or just want to discuss a project? Contact Me!!
         </p>
       </div>
 
@@ -236,7 +226,7 @@ const Contact = () => {
           >
             <span style={{ color: "#32CD30" }}>Hire</span> Me!
           </h1>
-          <div className="contacts-body">
+         
             <div className="contacts-form">
               <form onSubmit={handleContactForm}>
                 <div className="input-container">
@@ -342,156 +332,9 @@ const Contact = () => {
               </Snackbar>
             </div>
 
-            <div className="contacts-details">
-              <a
-                href={`mailto:${contactsData.email}`}
-                className="personal-details"
-              >
-                <div className={classes.detailsIcon}>
-                  <FiAtSign />
-                </div>
-                <p style={{ color: "white" }} className="email">
-                  {contactsData.email}
-                </p>
-              </a>
             
-
-              <a
-                className="personal-details"
-                href="https://goo.gl/maps/qAiPwH8RWxdhqUFU8"
-                target="_blank" // Opens link in a new tab/window
-                rel="noopener noreferrer" // Recommended for security reasons when using target="_blank"
-              >
-                <div className={classes.detailsIcon}>
-                  <HiOutlineLocationMarker />
-                </div>
-                <p style={{ color: "white" }}>{contactsData.address}</p>
-              </a>
-
-              <div className="socialmedia-icons">
-                {socialsData.whatsapp && (
-                  <a
-                    href={socialsData.whatsapp}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <FaWhatsapp
-                      aria-label="WhatsApp"
-                      style={{ color: "#25D366" }}
-                    />
-                  </a>
-                )}
-                {socialsData.twitter && (
-                  <a
-                    href={socialsData.twitter}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <FaTwitter
-                      aria-label="Twitter"
-                      style={{ color: "#00acee " }}
-                    />
-                  </a>
-                )}
-                {socialsData.github && (
-                  <a
-                    href={socialsData.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`${classes.socialIcon} socialIcon`}
-                  >
-                    <FaGithub
-                      aria-label="GitHub"
-                      style={{ color: "##1d1a1a" }}
-                      className={`${classes.GitHub} GitHub`}
-                    />
-                  </a>
-                )}
-                {socialsData.linkedIn && (
-                  <a
-                    href={socialsData.linkedIn}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <FaLinkedinIn
-                      aria-label="LinkedIn"
-                      style={{ color: "#0C63BC" }}
-                    />
-                  </a>
-                )}
-                {socialsData.instagram && (
-                  <a
-                    href={socialsData.instagram}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <FaInstagram
-                      aria-label="Instagram"
-                      style={{ color: "#d62976 " }}
-                    />
-                  </a>
-                )}
-                {socialsData.hashnode && (
-                  <a
-                    href={socialsData.hashnode}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <SiHashnode
-                      aria-label="hashnode"
-                      style={{ color: "#2962FF" }}
-                    />
-                  </a>
-                )}
-                {socialsData.leetcode && (
-                  <a
-                    href={socialsData.leetcode}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <SiLeetcode
-                      aria-label="Leetcode"
-                      style={{ color: "#FFD700" }}
-                    />
-                  </a>
-                )}
-                {socialsData.freecodecamp && (
-                  <a
-                    href={socialsData.freecodecamp}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={`${classes.socialIcon} socialIcon`}
-                  >
-                    <FaFreeCodeCamp
-                      aria-label="freecodecamp"
-                      style={{ color: "#f2f2f2" }}
-                      className={`${classes.freecodecamp} freecodecamp`}
-                    />
-                  </a>
-                )}
-
-                {socialsData.hackerrank && (
-                  <a
-                    href={socialsData.hackerrank}
-                    target="_blank"
-                    rel="noreferrer"
-                    className={classes.socialIcon}
-                  >
-                    <FaHackerrank
-                      aria-label="hackerrank"
-                      style={{ color: "#008000" }}
-                    />
-                  </a>
-                )}
-              </div>
-            </div>
-          </div>
+               
+          
         </div>
         <img src={contactsGreen} alt="contacts" className="contacts--img" />
       </div>
