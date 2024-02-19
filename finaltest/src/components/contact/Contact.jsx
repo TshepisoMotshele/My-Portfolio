@@ -6,13 +6,9 @@ import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 
 
-
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
 
 import contactsGreen from "../../assets/contactsGreen.svg";
-
- 
-
 
 import "./Contacts.css";
 import emailjs from "emailjs-com";
@@ -116,117 +112,111 @@ import emailjs from "emailjs-com";
     },
   }));
 
-const Contact = () => {
-  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
-  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
-  const SERVICE_ID =  import.meta.env.VITE_SERVICE_ID;
-
-   const [open, setOpen] = useState(false);
-   const classes = useStyles();
-   const [name, setName] = useState("");
-   const [email, setEmail] = useState("");
-   const [message, setMessage] = useState("");
-
-  const [success, setSuccess] = useState(false);
-
-   const [errMsg, setErrMsg] = useState("");
-
-
-
-   const handleClose = (reason) => {
-     if (reason === "clickaway") {
-       return;
-     }
-
-     setOpen(false);
-   };
-
-
-
-
+  const Contact = () => {
+    const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+    const [open, setOpen] = useState(false);
+    const classes = useStyles();
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+    const [success, setSuccess] = useState(false);
+    const [errMsg, setErrMsg] = useState("");
+  
+    const handleClose = (reason) => {
+      if (reason === "clickaway") {
+        return;
+      }
+      setOpen(false);
+    };
+  
     const handleContactForm = (e) => {
       e.preventDefault();
-
-   if (name && email && message) {
-     if (isEmail(email)) {
-       const templateParams = {
-         from_name: name,
-         from_email: email,
-         message: message,
-         to_email: "tshepisomotshele@gmail.com",
-       };
-
-       emailjs
-         .send(SERVICE_ID, TEMPLATE_ID, templateParams, PUBLIC_KEY)
-         .then(
-           (response) => {
-             console.log("Email sent successfully!", response);
-             setSuccess(true);
-        
-             setErrMsg("");
-             setName("");
-             setEmail("");
-             setMessage("");
-             setOpen(false);
-           },
-           (error) => {
-             console.error("Failed to send email:", error);
-             setErrMsg("Failed to send email");
-             setOpen(true);
-           }
-         );
-     } else {
-       setErrMsg("Invalid email");
-       setOpen(true);
-     }
-   } else {
-     setErrMsg("Enter all the fields");
-     setOpen(true);
-   }
-    };
-
-     React.useEffect(() => {
-       let timer;
-       if (success) {
-         timer = setTimeout(() => {
-          setSuccess(false)
-      
-         }, 5000); // Change 5000 to the desired duration in milliseconds (5 seconds in this case)
-       }
-       return () => clearTimeout(timer);
-     }, [success]);
   
-  return (
-    <>
-      <div className="contact">
-        <h1
-          style={{
-            marginTop: "3rem",
-            fontFamily: "Fira Code",
-            position: "static",
-          }}
-        >
-          Have a <span style={{ color: "#32CD30" }}>Question</span> on your
-          mind??
-        </h1>
-        <p style={{ textAlign: "center" }}>
-          Or just want to discuss a project? Contact Me!!
-        </p>
-      </div>
+      if (name && email && message) {
+        if (isEmail(email)) {
+          const templateParams = {
+            from_name: name,
+            from_email: email,
+            message: message,
+            to_email: "tshepisomotshele@gmail.com",
+          };
+  
+          emailjs
+  .send(
+    import.meta.env.VITE_EMAILJS_SERVICE_ID,
+    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+    templateParams,
+    import.meta.env.VITE_EMAILJS_USER_ID
+    
+  )
 
-      <div className="contacts" id="contacts">
-        <div className="contacts--container">
+            .then(
+              (response) => {
+                console.log("Email sent successfully!", response);
+                setSuccess(true);
+                setErrMsg("");
+                setName("");
+                setEmail("");
+                setMessage("");
+                setOpen(false);
+              },
+              (error) => {
+                console.error("Failed to send email:", error);
+                setErrMsg("Failed to send email");
+                setOpen(true);
+              }
+            );
+        } else {
+          setErrMsg("Invalid email");
+          setOpen(true);
+        }
+      } else {
+        setErrMsg("Enter all the fields");
+        setOpen(true);
+      }
+    };
+  
+    React.useEffect(() => {
+      let timer;
+      if (success) {
+        timer = setTimeout(() => {
+          setSuccess(false);
+        }, 5000);
+      }
+      return () => clearTimeout(timer);
+    }, [success]);
+  
+    return (
+      <>
+        <div className="contact">
           <h1
             style={{
               marginTop: "3rem",
               fontFamily: "Fira Code",
-              fontSize: "2.5rem",
-              fontWeight: "bold",
+              position: "static",
             }}
           >
-            <span style={{ color: "#32CD30" }}>Hire</span> Me!
+            Have a <span style={{ color: "#32CD30" }}>Question</span> on your
+            mind??
           </h1>
-         
+          <p style={{ textAlign: "center" }}>
+            Or just want to discuss a project? Contact Me!!
+          </p>
+        </div>
+  
+        <div className="contacts" id="contacts">
+          <div className="contacts--container">
+            <h1
+              style={{
+                marginTop: "3rem",
+                fontFamily: "Fira Code",
+                fontSize: "2.5rem",
+                fontWeight: "bold",
+              }}
+            >
+              <span style={{ color: "#32CD30" }}>Hire</span> Me!
+            </h1>
+  
             <div className="contacts-form">
               <form onSubmit={handleContactForm}>
                 <div className="input-container">
@@ -268,7 +258,7 @@ const Contact = () => {
                     className={`form-message ${classes.message}`}
                   />
                 </div>
-
+  
                 <div className="submit-btn">
                   <button
                     type="submit"
@@ -331,15 +321,15 @@ const Contact = () => {
                 />
               </Snackbar>
             </div>
-
-            
-               
-          
+          </div>
+          <img
+            src={contactsGreen}
+            alt="contacts"
+            className="contacts--img"
+          />
         </div>
-        <img src={contactsGreen} alt="contacts" className="contacts--img" />
-      </div>
-    </>
-  );
-};
-
-export default Contact;
+      </>
+    );
+  };
+  
+  export default Contact;

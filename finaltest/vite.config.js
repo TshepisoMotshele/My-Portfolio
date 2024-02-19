@@ -1,7 +1,12 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
+// ...
 export default defineConfig({
+  // ...
+  define: {
+    'process.env': {}
+  },
   plugins: [react()],
   build: {
     chunkSizeWarningLimit: 1000, // Adjust the chunk size warning limit as needed
@@ -12,6 +17,7 @@ export default defineConfig({
             return "vendor"; // Group external dependencies into a 'vendor' chunk
           }
         },
+       
       },
     },
   },
