@@ -4,6 +4,7 @@ import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
+import ReCAPTCHA from "react-google-recaptcha";
 
 
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
@@ -185,7 +186,7 @@ import emailjs from "emailjs-com";
       }
       return () => clearTimeout(timer);
     }, [success]);
-  
+  const onChange = () => {};
     return (
       <>
         <div className="contact">
@@ -258,8 +259,13 @@ import emailjs from "emailjs-com";
                     className={`form-message ${classes.message}`}
                   />
                 </div>
+                <ReCAPTCHA
+    sitekey="6LfdXXkpAAAAAJMeiLwPbQUtpcstujf9XE4J8ePL"
+    onChange={onChange}
+  />
   
                 <div className="submit-btn">
+
                   <button
                     type="submit"
                     className={classes.submitBtn}
@@ -280,6 +286,8 @@ import emailjs from "emailjs-com";
                       )}
                     </div>
                   </button>
+                  
+                  
                 </div>
               </form>
               <Snackbar
@@ -321,6 +329,7 @@ import emailjs from "emailjs-com";
                 />
               </Snackbar>
             </div>
+            {message && <span>Well done! I'll get back to you soon.🤗</span>}
           </div>
           <img
             src={contactsGreen}
