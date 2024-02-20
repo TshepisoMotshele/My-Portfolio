@@ -23,24 +23,7 @@ function Experience() {
       links:
         "https://drive.google.com/file/d/1WExV0iHcNiVC8No0Y6f5PMmRDJ-lrtTc/view?usp=drive_link",
     },
-    {
-      id: 3,
-      company: "****",
-      jobtitle: "#",
-      startYear: "May 2022 ",
-      endYear: " Jun 2022",
-      links:
-        "#",
-    },
-    {
-      id: 4,
-      company: "***",
-      jobtitle: "#",
-      startYear: "Aug 2021 ",
-      endYear: " Nov 2021",
-      links:
-        "###",
-    },
+  
   ];
 
   return (

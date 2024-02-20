@@ -21,7 +21,6 @@ const pages = [
   { text: "About", href: "/about" },
   { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
-  { text: "Blogs", href: "https://iam-dev.hashnode.dev/" },
 ];
 const pageIcons = [
   HomeRoundedIcon,
@@ -78,7 +77,7 @@ const Header = () => {
               },
             }}
           >
-            Tshepiso Motshel
+            Tshepiso Motshele
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>

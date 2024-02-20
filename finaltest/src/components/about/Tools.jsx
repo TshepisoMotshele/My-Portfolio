@@ -3,13 +3,13 @@ import { Card } from "semantic-ui-react";
 
 import {
   SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
   SiVercel,
   SiGit,
   SiFigma,
   SiCanva,
   SiFirebase,
+  SiIntellijidea,
+  SiPycharm,
 } from "react-icons/si";
 
 // import { VscTerminalCmd } from "react-icons/vsc";
@@ -76,7 +76,7 @@ const Tools = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiPostman
+            <SiIntellijidea
               style={{ width: "60%", height: "auto", color: "#FF6C37" }}
             />
           </Card>
@@ -122,7 +122,7 @@ const Tools = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiSlack
+            <SiPycharm
               style={{ width: "60%", height: "auto", color: "#36c5f0 " }}
             />
           </Card>

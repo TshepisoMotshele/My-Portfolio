@@ -14,7 +14,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(125, 176, 180) !important;
+  background-color: #a336a0 !important;
   color: white !important;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .App-header {
-  background-color: rgb(255, 235, 224);
+  background-color: #ffebe0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -135,7 +135,7 @@ body {
   align-items: center;
   transform: scale(0.7, 0.7);
 
-  background-color: #10265ddc;
+  background-color: #10265d;
 
   padding: 1.5rem 1rem !important;
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5) !important;
@@ -153,6 +153,14 @@ body {
 transform: scale(1.02);
   transition: all 0.2s ease-in-out;
   color: #32cd30;
+}
+
+.header-buttons {
+  border-bottom: 5px solid #152b61 !important;
+}
+
+.header-buttons:hover {
+  border-bottom: 5px solid #32cd30 !important;
 }
 .Typewriter__wrapper {
   line-height: 3rem !important;
@@ -218,11 +226,7 @@ transform: scale(1.02);
 .single-card {
   transform: scale(0.8, 0.8);
   box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.4) !important;
-  background: linear-gradient(
-    to right,
-    rgb(182, 244, 146),
-    rgb(51, 139, 147)
-  ) !important;
+  background: linear-gradient(to right, #b6f492, #338b93) !important;
   border-radius: 2rem !important;
   border: 5px solid black !important;
 }
@@ -309,7 +313,7 @@ transform: scale(1.02);
 }
 
 .linktree-button:hover {
-  background-color: #091c4df9 !important;
+  background-color: #091c4d !important;
   border-radius: 8px;
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
   transition: background-color 200ms ease-in-out;

@@ -7,6 +7,7 @@ import {
   DiReact,
   DiNodejs,
   DiMongodb,
+  DiPython,
 } from "react-icons/di";
 import { FaCuttlefish } from "react-icons/fa";
 import {
@@ -73,7 +74,7 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <FaCuttlefish
+            <DiPython
               style={{
                 width: "fit-content",
                 height: "4rem",
@@ -107,23 +108,6 @@ const TechStack = () => {
             />
           </Card>
 
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <SiTypescript
-              style={{
-                width: "60%",
-                height: "5rem",
-                backgroundColor: "#FFFFFF",
-                color: "#007ACC",
-              }}
-            />
-          </Card>
           <Card
             raised
             className="item"
@@ -175,56 +159,8 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiMui style={{ width: "60%", height: "5rem", color: "#1976D2" }} />
-          </Card>
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <SiChakraui
-              style={{ width: "60%", height: "5rem", color: "#3182CE" }}
-            />
-          </Card>
-
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
             <DiNodejs
               style={{ width: "60%", height: "5rem", color: "green" }}
-            />
-          </Card>
-
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <DiMongodb
-              style={{ width: "60%", height: "5rem", color: "green" }}
-            />
-          </Card>
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <SiPostgresql
-              style={{ width: "60%", height: "5rem", color: "#336791" }}
             />
           </Card>
         </Card.Group>
