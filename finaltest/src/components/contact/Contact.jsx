@@ -329,7 +329,6 @@ import emailjs from "emailjs-com";
                 />
               </Snackbar>
             </div>
-            {message && <span>Well done! I'll get back to you soon.🤗</span>}
           </div>
           <img
             src={contactsGreen}
