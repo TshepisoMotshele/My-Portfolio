@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import TypeAnimation from "./TypeAnimation";
 import HomeBottomPage from "./HomeBottomPage";
 import developer from "../../assets/developer.svg";
-import resumePdf from "../../assets/Resume_Devesh.pdf";
+import TshepisoPDF from "../../assets/Tshepiso.pdf";
 import { Button, makeStyles } from "@material-ui/core";
 
  const useStyles = makeStyles((t) => ({
@@ -108,20 +108,15 @@ const HomePage = () => {
           </div>
           {/* resume dowload and contact button */}
           <div className={classes.resumeContainer}>
-            {resumePdf && (
-              <a
-                href={resumePdf}
-                download="resume"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button className={classes.resumeBtn}>Download CV</Button>
-              </a>
-            )}
-            <NavLink to="/contact" smooth={true} spy="true" duration={2000}>
-              <Button className={classes.contactBtn}>Contact</Button>
-            </NavLink>
-          </div>
+        {TshepisoPDF && (
+          <a href={TshepisoPDF} download="Tshepiso_Motshele_Resume">
+            <Button className={classes.resumeBtn}>Download CV</Button>
+          </a>
+        )}
+        <NavLink to="/contact" smooth={true} spy="true" duration={2000}>
+          <Button className={classes.contactBtn}>Contact</Button>
+        </NavLink>
+      </div>
         </div>
 
         <img

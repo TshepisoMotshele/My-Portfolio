@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 import { SiLinktree } from "react-icons/si";
 import { Button } from "@mui/material";
 
-const resumeURL ="https://drive.google.com/file/d/15s74dvQI05vIhZwxYgKrSAHX9eKfYt1T/view?usp=drive_link";
+const resumeURL ="TshepisoPDF";
 
 const HomeBottomPage = () => {
 
@@ -72,15 +72,7 @@ const HomeBottomPage = () => {
       </div>
       <div className="downloadPdf">
         <a href={resumeURL} target="_blank" rel="noreferrer">
-          <Button
-            variant="contained"
-            endIcon={<SiLinktree class="linktree-icon" />}
-            className="linktree-button"
-            href="http://linktr.ee/iam_DEv22"
-            target="_blank" // Open link in a new tab
-          >
-            LinkTree
-          </Button>
+         
         </a>
       </div>
     </div>
