@@ -6,15 +6,9 @@ import {
   DiJavascript1,
   DiReact,
   DiNodejs,
-  DiMongodb,
   DiPython,
 } from "react-icons/di";
-import { FaCuttlefish } from "react-icons/fa";
 import {
-  SiMui,
-  SiChakraui,
-  SiTypescript,
- SiPostgresql,
   SiHtml5,
   SiCss3,
 } from "react-icons/si";
@@ -40,23 +34,23 @@ const TechStack = () => {
 
   const getItemsPerRow = () => {
     if (width >= 1000) {
-      return 6;
+      return 4;
     } else
     if (width >= 799 && width <= 999) {
-      return 4;
-    } else {
       return 3;
+    } else {
+      return 2;
     }
   };
 
   return (
     <div className="techstack">
-      <h1>
+      <h1 style={{ fontSize: "50px" }}>
         My{" "}
         <span
           style={{
             color: "#32CD30",
-            marginTop: "3rem",
+            marginTop: "3.5rem",
             fontFamily: "Fira Code",
             fontWeight: "bold",
           }}
@@ -75,13 +69,16 @@ const TechStack = () => {
             }}
           >
             <DiPython
-              style={{
-                width: "fit-content",
-                height: "4rem",
+            style={{ 
+              width: "60%", 
+              height: "auto", 
+              backgroundImage: "linear-gradient(to bottom, blue, yellow)" 
+            }}
 
-                color: "#FFFFFF",
-              }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Python</Card.Header>
+    </Card.Content>
           </Card>
 
           <Card
@@ -92,7 +89,12 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <DiJava style={{ width: "60%", height: "5rem", color: "red" }} />
+            <DiJava 
+              style={{ width: "60%", height: "auto", color: "red" }}
+              />
+              <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Java</Card.Header>
+    </Card.Content>
           </Card>
 
           <Card
@@ -104,8 +106,11 @@ const TechStack = () => {
             }}
           >
             <DiJavascript1
-              style={{ width: "60%", height: "5rem", color: "#FFC300" }}
-            />
+              style={{ width: "60%", height: "auto", color: "yellow" }}
+              />
+              <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>JavaScript</Card.Header>
+    </Card.Content>
           </Card>
 
           <Card
@@ -117,13 +122,12 @@ const TechStack = () => {
             }}
           >
             <SiHtml5
-              style={{
-                width: "60%",
-                height: "5rem",
+              style={{ width: "60%", height: "auto", color: "#E34234" }}
 
-                color: "#E34F26",
-              }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>HTML</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -134,8 +138,11 @@ const TechStack = () => {
             }}
           >
             <SiCss3
-              style={{ width: "60%", height: "5rem", color: "#1572B6" }}
-            />
+              style={{ width: "60%", height: "auto", color: " arctic blue" }}
+              />
+              <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>CSS</Card.Header>
+    </Card.Content>
           </Card>
 
           <Card
@@ -147,8 +154,11 @@ const TechStack = () => {
             }}
           >
             <DiReact
-              style={{ width: "60%", height: "5rem", color: "#61DBFB" }}
-            />
+              style={{ width: "60%", height: "auto", color: "skyblue" }}
+              />
+              <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>React</Card.Header>
+    </Card.Content>
           </Card>
 
           <Card
@@ -160,8 +170,11 @@ const TechStack = () => {
             }}
           >
             <DiNodejs
-              style={{ width: "60%", height: "5rem", color: "green" }}
-            />
+              style={{ width: "60%", height: "auto", color: "green" }}
+              />
+              <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Node JS</Card.Header>
+    </Card.Content>
           </Card>
         </Card.Group>
       </div>

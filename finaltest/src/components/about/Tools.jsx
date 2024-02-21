@@ -12,8 +12,6 @@ import {
   SiPycharm,
 } from "react-icons/si";
 
-// import { VscTerminalCmd } from "react-icons/vsc";
-
 
 const Tools = () => {
  const [width, setWidth] = useState(window.innerWidth);
@@ -32,16 +30,16 @@ const Tools = () => {
 
  const getItemsPerRow = () => {
    if (width >= 1000) {
-     return 8;
+     return 4;
   
    } else {
-     return 4;
+     return 3;
    }
  };
 
   return (
     <div className="techstack">
-      <h1>
+      <h1 style={{ fontSize: "50px" }}>
         Tools i{" "}
         <span
           style={{
@@ -67,6 +65,9 @@ const Tools = () => {
             <SiVisualstudiocode
               style={{ width: "60%", height: "auto", color: "#007ACC" }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>VS Code</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -79,6 +80,9 @@ const Tools = () => {
             <SiIntellijidea
               style={{ width: "60%", height: "auto", color: "#FF6C37" }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>IntelliJ</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -89,6 +93,9 @@ const Tools = () => {
             }}
           >
             <SiGit style={{ width: "60%", height: "auto", color: "#FF6C37" }} />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Git</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -101,6 +108,9 @@ const Tools = () => {
             <SiFigma
               style={{ width: "60%", height: "auto", color: "#d4acc4  " }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Figma</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -113,6 +123,9 @@ const Tools = () => {
             <SiCanva
               style={{ width: "60%", height: "auto", color: "#00C4CC    " }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Canva</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -125,6 +138,9 @@ const Tools = () => {
             <SiPycharm
               style={{ width: "60%", height: "auto", color: "#36c5f0 " }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>PyCharm</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -137,6 +153,9 @@ const Tools = () => {
             <SiFirebase
               style={{ width: "60%", height: "auto", color: "#FFA611 " }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Firebase</Card.Header>
+    </Card.Content>
           </Card>
           <Card
             raised
@@ -149,6 +168,9 @@ const Tools = () => {
             <SiVercel
               style={{ width: "60%", height: "auto", color: "#000000 " }}
             />
+            <Card.Content style={{ textAlign: 'center', paddingBottom: '10px' }}>
+      <Card.Header style={{ color: 'white', fontSize: '24px' }}>Vercel</Card.Header>
+    </Card.Content>
           </Card>
         </Card.Group>
       </div>
