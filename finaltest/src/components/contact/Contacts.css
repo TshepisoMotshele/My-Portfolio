@@ -157,7 +157,7 @@
     line-height: 110%;
     font-weight: 500;
     font-family: var(--primaryFont);
-    width: fit-content;
+
     word-break: break-word;
 }
 

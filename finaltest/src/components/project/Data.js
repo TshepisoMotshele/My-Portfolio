@@ -1,92 +1,80 @@
-import one from "../../assets/Data01/01.jpg";
-import two from "../../assets/Data01/02.png";
-import three from "../../assets/Data01/03.jpg";
-import four from "../../assets/Data01/04.png";
-import five from "../../assets/Data01/05.png";
+import one from "../../assets/Data01/one.png";
+import two from "../../assets/Data01/two.png";
+import three from "../../assets/Data01/three.png";
+import four from "../../assets/Data01/four.png";
+import five from "../../assets/Data01/five.png";
 import six from "../../assets/Data01/06.png";
 
 
 export const projectsData = [
   {
     id: 1,
-    projectName: "Cricket Weapon Store",
+    projectName: "LemaseGroup Website",
     projectDesc:
-      "CricketWeapon is a full-stack e-commerce application that offers a wide range of cricket equipment.",
+      "I created a static website for LemaseGroup company.",
     tags: [
-      "React",
-      "Sass",
-      "Material Ui",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Redux",
+      "HTML",
+      "CSS",
+      "JavaScript",
+      
     ],
-    code: "https://github.com/MehraDevesh2022/CricketWeapon-Store",
-    demo: "https://cricketweaopn.vercel.app/",
+    code: "https://github.com/TshepisoMotshele/LemaseGroup-Website",
+    demo: "https://lemase-group.netlify.app/",
     image: one,
   },
   {
     id: 2,
-    projectName: "ChatMind -Chat Application",
+    projectName: "Banking App",
     projectDesc:
       "ChatMind is a full stack chat application that allows users to communicate with each other in real-time.",
     tags: [
-      "React.js",
-      "Chakra UI",
-      "Node.js",
-      "Express.js",
-      "Socket.io",
+      "Python",
+      
     ],
-    code: "https://github.com/MehraDevesh2022/chat-mind",
-    demo: "https://chat-mind-production.up.railway.app/",
+    code: "https://github.com/TshepisoMotshele/bank-GUI",
+    demo: "#",
     image: two,
   },
   {
     id: 3,
-    projectName: "MovieVerse - Movie App",
+    projectName: "Income Tax Calculator",
     projectDesc:
-      "MovieVerse is a comprehensive MERN application that offers an immersive movie experience similar to IMDb.",
+      "RSA 2024 tax calculator. It takes a user's annual salary and calculates annual total tax from it. it also gives the user an estimates monthly UIF, monthly tax and monthly net based on the annual salary given by the user.",
     tags: [
-      "React.js",
-      "Material Ui",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Redux toolkit",
-      "TMDB API",
+      "Java"
     ],
-    code: "https://github.com/MehraDevesh2022/MovieVerse",
-    demo: "https://movieverse-bice.vercel.app/",
+    code: "https://github.com/TshepisoMotshele/TaxCalculator",
+    demo: "#",
     image: three,
   },
   {
     id: 4,
-    projectName: "TaskPro",
+    projectName: "Metric Converter",
     projectDesc:
-      "TaskPro is a full-stack to-do app. It allows users to create, update, and delete tasks.",
-    tags: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "MongoDB"],
-    code: "https://github.com/MehraDevesh2022/TaskPro",
-    demo: "https://busy-teal-lion-robe.cyclic.cloud/",
+      "This app allows you to transform values from metric system to imperial system. and vice versa.",
+    tags: ["Java"],
+    code: "https://github.com/TshepisoMotshele/Metric",
+    demo: "#",
     image: four,
   },
   {
     id: 5,
-    projectName: "Markdown Writer",
+    projectName: "SnakeGame",
     projectDesc:
-      "Markdown Writer is a React app that allows you to create, edit, and manage your Markdown notes in a user-friendly interface.",
-    tags: ["React", "CSS3", "React-MDE"],
-    code: "https://github.com/MehraDevesh2022/markdown-creater",
-    demo: "https://markdown-creater.onrender.com/",
+      "This is a simpple single player snake game, with three difficulty levels (Easy,Medium & Hard). there is sound included in the game as well, as the snake eats the food.the game also allows you to play and pause.",
+    tags: ["HTML", "CSS3", "JavaScript"],
+    code: "#",
+    demo: "#",
     image: five,
   },
   {
     id: 6,
-    projectName: "Expense-Tracker",
+    projectName: "Chat-App",
     projectDesc:
-      "Add, remove, and track transactions while keeping data in sync with local storage.",
-    tags: ["React", "CSS3", "Context API"],
-    code: "https://expense-tracker-pgcg.onrender.com/",
-    demo: "https://github.com/hhhrrrttt222111/developer-portfolio",
+      "This app allows real time chat between users",
+    tags: ["ReactJS"],
+    code: "#",
+    demo: "#",
     image: six,
   },
  

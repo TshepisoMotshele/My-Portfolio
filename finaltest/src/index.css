@@ -1,8 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;800&display=swap");
-@import "tailwindcss/base";
-@import "tailwindcss/components";
-@import "tailwindcss/utilities";
+
+
 
 * {
   font-family: "Fira-Code", monospace;
@@ -191,15 +190,15 @@ transform: scale(1.02);
 .about-parent {
   display: flex;
   justify-content: space-evenly;
-  height: 60vh;
+  height: 70vh;
 }
 
 .about-text {
-  font-size: large;
-  margin-left: 5rem;
-  width: 50%;
-  margin: auto;
+  font-size: 34px;
+  text-align: center;
+  width: 100%;
   font-weight: 800;
+  margin-right: 55px;
 }
 
 .about-image {

@@ -1,22 +1,28 @@
-/* AboutInfo.css */
+.about-parent {
+  display: flex;
+  flex-direction: row-reverse; /* Reverse the direction to have text on the right and image on the left */
+  justify-content: space-between;
+  align-items: center;
+}
 
-.about {
-  }
-  
-  .about-heading {
-    /* Add styles for the about heading if needed */
-  }
-  
+.about-text {
+  flex: 1;
+  padding-left: 20px; /* Add some spacing between text and image */
+}
+
+.about-image {
+  flex: 1;
+  max-width: 100%; /* Ensure image doesn't exceed its container */
+}
+
+@media screen and (max-width: 800px) {
   .about-parent {
-    /* Add styles for the parent container of about text and image */
+    flex-direction: column;
   }
-  
-  .about-text {
-    /* Add styles for the about text */
-  }
-  
+
+  .about-text,
   .about-image {
-    /* Add styles for the about image */
+    width: 100%;
+    padding: 0; /* Reset padding for smaller screens */
   }
-  
-  
+}

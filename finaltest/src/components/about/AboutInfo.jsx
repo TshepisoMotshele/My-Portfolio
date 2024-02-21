@@ -4,6 +4,8 @@ import { BsFillArrowRightSquareFill } from "react-icons/bs";
 import T from "../../assets/T.png";
 import Experience from "./Experince";
 import Tools from "./Tools";
+import "../about/About.css"
+
 const AboutInfo = () => {
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -45,7 +47,7 @@ const AboutInfo = () => {
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
               Tshepiso Motshe
             </span>{" "}
-            from Cape Town, South Africa. And I started my career as a leaner
+            from Cape Town, South Africa. And I started my career in an apprenticeship
             Full-Stack Developer at{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
               CapaCiTi (UVU Africa)
