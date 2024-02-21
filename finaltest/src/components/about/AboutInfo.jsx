@@ -45,7 +45,7 @@ const AboutInfo = () => {
           <p style={{ textAlign: "justify" }}>
             Hi there, I am{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              Tshepiso Motshe
+              Tshepiso Motshele
             </span>{" "}
             from Cape Town, South Africa. And I started my career in an apprenticeship
             Full-Stack Developer at{" "}
