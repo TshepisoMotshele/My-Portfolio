@@ -4,7 +4,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import TypeAnimation from "./TypeAnimation";
 import HomeBottomPage from "./HomeBottomPage";
-import developer from "../../assets/developer.svg";
+import TM from "../../assets/TM.png"
 import TshepisoPDF from "../../assets/Tshepiso.pdf";
 import { Button, makeStyles } from "@material-ui/core";
 
@@ -120,10 +120,16 @@ const HomePage = () => {
         </div>
 
         <img
-          className="rounded w-36 h-36 homepage-avatar"
-          src={developer}
-          alt="Extra large avatar"
-        ></img>
+  className="rounded w-36 h-36 homepage-avatar"
+  src={TM}
+  alt="Tshepiso Pic"
+  style={{
+    maxWidth: "150%",
+    height: "auto",  
+    display: "block",
+  }}
+/>
+
       </div>
 
       <HomeBottomPage />

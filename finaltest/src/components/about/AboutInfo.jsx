@@ -1,7 +1,7 @@
 import React ,{useEffect ,useState} from "react";
 import TechStack from "./TechStack";
 import { BsFillArrowRightSquareFill } from "react-icons/bs";
-import codeImage from "../../assets/coder.svg";
+import T from "../../assets/T.png";
 import Experience from "./Experince";
 import Tools from "./Tools";
 const AboutInfo = () => {
@@ -63,7 +63,7 @@ const AboutInfo = () => {
         </div>
         <img
           className="rounded about-image"
-          src={codeImage}
+          src={T}
           alt="Extra large avatar"
         />
       </div>

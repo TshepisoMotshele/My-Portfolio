@@ -122,6 +122,8 @@ import emailjs from "emailjs-com";
     const [message, setMessage] = useState("");
     const [success, setSuccess] = useState(false);
     const [errMsg, setErrMsg] = useState("");
+    const [captchaCompleted, setCaptchaCompleted] = useState(false);
+
   
     const handleClose = (reason) => {
       if (reason === "clickaway") {
@@ -132,212 +134,218 @@ import emailjs from "emailjs-com";
   
     const handleContactForm = (e) => {
       e.preventDefault();
-  
-      if (name && email && message) {
-        if (isEmail(email)) {
-          const templateParams = {
-            from_name: name,
-            from_email: email,
-            message: message,
-            to_email: "tshepisomotshele@gmail.com",
-          };
-  
-          emailjs
-  .send(
-    import.meta.env.VITE_EMAILJS_SERVICE_ID,
-    import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
-    templateParams,
-    import.meta.env.VITE_EMAILJS_USER_ID
-    
-  )
 
-            .then(
-              (response) => {
-                console.log("Email sent successfully!", response);
-                setSuccess(true);
-                setErrMsg("");
-                setName("");
-                setEmail("");
-                setMessage("");
-                setOpen(false);
-              },
-              (error) => {
-                console.error("Failed to send email:", error);
-                setErrMsg("Failed to send email");
-                setOpen(true);
-              }
-            );
-        } else {
-          setErrMsg("Invalid email");
+      // Check if captcha is completed
+      if (!captchaCompleted) {
+          setErrMsg("Please complete the captcha");
           setOpen(true);
-        }
-      } else {
-        setErrMsg("Enter all the fields");
-        setOpen(true);
+          return;
       }
-    };
-  
-    React.useEffect(() => {
+
+      if (name && email && message) {
+          if (isEmail(email)) {
+              const templateParams = {
+                  from_name: name,
+                  from_email: email,
+                  message: message,
+                  to_email: "tshepisomotshele@gmail.com",
+              };
+
+              emailjs
+                  .send(
+                      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                      templateParams,
+                      import.meta.env.VITE_EMAILJS_USER_ID
+                  )
+                  .then(
+                      (response) => {
+                          console.log("Email sent successfully!", response);
+                          setSuccess(true);
+                          setErrMsg("");
+                          setName("");
+                          setEmail("");
+                          setMessage("");
+                          setOpen(false);
+                      },
+                      (error) => {
+                          console.error("Failed to send email:", error);
+                          setErrMsg("Failed to send email");
+                          setOpen(true);
+                      }
+                  );
+          } else {
+              setErrMsg("Invalid email");
+              setOpen(true);
+          }
+      } else {
+          setErrMsg("Enter all the fields");
+          setOpen(true);
+      }
+  };
+
+  React.useEffect(() => {
       let timer;
       if (success) {
-        timer = setTimeout(() => {
-          setSuccess(false);
-        }, 5000);
+          timer = setTimeout(() => {
+              setSuccess(false);
+          }, 5000);
       }
       return () => clearTimeout(timer);
-    }, [success]);
-  const onChange = () => {};
-    return (
-      <>
-        <div className="contact">
-          <h1
-            style={{
-              marginTop: "3rem",
-              fontFamily: "Fira Code",
-              position: "static",
-            }}
-          >
-            Have a <span style={{ color: "#32CD30" }}>Question</span> on your
-            mind??
-          </h1>
-          <p style={{ textAlign: "center" }}>
-            Or just want to discuss a project? Contact Me!!
-          </p>
-        </div>
-  
-        <div className="contacts" id="contacts">
-          <div className="contacts--container">
-            <h1
-              style={{
-                marginTop: "3rem",
-                fontFamily: "Fira Code",
-                fontSize: "2.5rem",
-                fontWeight: "bold",
-              }}
-            >
-              <span style={{ color: "#32CD30" }}>Hire</span> Me!
-            </h1>
-  
-            <div className="contacts-form">
-              <form onSubmit={handleContactForm}>
-                <div className="input-container">
-                  <label htmlFor="Name" className={classes.label}>
-                    Name
-                  </label>
-                  <input
-                    placeholder="John Doe"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                    type="text"
-                    name="name"
-                    className={`form-input ${classes.input}`}
-                  />
-                </div>
-                <div className="input-container">
-                  <label htmlFor="email" className={classes.label}>
-                    Email
-                  </label>
-                  <input
-                    placeholder="John@doe.com"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    type="email"
-                    name="Email"
-                    className={`form-input ${classes.input}`}
-                  />
-                </div>
-                <div className="input-container">
-                  <label htmlFor="message" className={classes.label}>
-                    Message
-                  </label>
-                  <textarea
-                    placeholder="Type your message...."
-                    value={message}
-                    onChange={(e) => setMessage(e.target.value)}
-                    type="text"
-                    name="Message"
-                    className={`form-message ${classes.message}`}
-                  />
-                </div>
-                <ReCAPTCHA
-    sitekey="6LfdXXkpAAAAAJMeiLwPbQUtpcstujf9XE4J8ePL"
-    onChange={onChange}
-  />
-  
-                <div className="submit-btn">
+  }, [success]);
 
-                  <button
-                    type="submit"
-                    className={classes.submitBtn}
-                    onClick={handleContactForm}
-                  >
-                    <p style={{ alignSelf: "end" }}>
-                      {!success ? "Send" : "Sent"}
-                    </p>
-                    <div className="submit-icon">
-                      {!success ? (
-                        <>
-                          <AiOutlineSend className="send-icon" />
-                        </>
-                      ) : (
-                        <>
-                          <AiOutlineCheckCircle className="success-icon" />
-                        </>
-                      )}
-                    </div>
-                  </button>
-                  
-                  
-                </div>
-              </form>
-              <Snackbar
-                anchorOrigin={{
-                  vertical: "top",
-                  horizontal: "center",
-                }}
-                open={open}
-                autoHideDuration={4000}
-                onClose={handleClose}
-              >
-                <SnackbarContent
-                  action={
-                    <React.Fragment>
-                      <IconButton
-                        size="small"
-                        aria-label="close"
-                        color="inherit"
-                        onClick={handleClose}
-                      >
-                        <CloseIcon fontSize="small" />
-                      </IconButton>
-                    </React.Fragment>
-                  }
-                  style={{
-                    backgroundColor: errMsg
-                      ? "#ff0000"
-                      : success
-                      ? "#32CD32"
-                      : "#FFA500",
-                    color: "white",
-                  }}
-                  message={
-                    errMsg ||
-                    (success
-                      ? "Message sent successfully!"
-                      : "Warning message here")
-                  }
-                />
-              </Snackbar>
-            </div>
-          </div>
-          <img
-            src={contactsGreen}
-            alt="contacts"
-            className="contacts--img"
-          />
-        </div>
-      </>
-    );
+  const onChange = () => {
+      // Update captcha completion status
+      setCaptchaCompleted(true);
   };
-  
-  export default Contact;
+
+  return (
+      <>
+          <div className="contact">
+              <h1
+                  style={{
+                      marginTop: "3rem",
+                      fontFamily: "Fira Code",
+                      position: "static",
+                  }}
+              >
+                  Have a <span style={{ color: "#32CD30" }}>Question</span> on your
+                  mind??
+              </h1>
+              <p style={{ textAlign: "center" }}>
+                  Or just want to discuss a project? Contact Me!!
+              </p>
+          </div>
+
+          <div className="contacts" id="contacts">
+              <div className="contacts--container">
+                  <h1
+                      style={{
+                          marginTop: "3rem",
+                          fontFamily: "Fira Code",
+                          fontSize: "2.5rem",
+                          fontWeight: "bold",
+                      }}
+                  >
+                      <span style={{ color: "#32CD30" }}>Hire</span> Me!
+                  </h1>
+
+                  <div className="contacts-form">
+                      <form onSubmit={handleContactForm}>
+                          <div className="input-container">
+                              <label htmlFor="Name" className={classes.label}>
+                                  Name
+                              </label>
+                              <input
+                                  placeholder="John Doe"
+                                  value={name}
+                                  onChange={(e) => setName(e.target.value)}
+                                  type="text"
+                                  name="name"
+                                  className={`form-input ${classes.input}`}
+                              />
+                          </div>
+                          <div className="input-container">
+                              <label htmlFor="email" className={classes.label}>
+                                  Email
+                              </label>
+                              <input
+                                  placeholder="John@doe.com"
+                                  value={email}
+                                  onChange={(e) => setEmail(e.target.value)}
+                                  type="email"
+                                  name="Email"
+                                  className={`form-input ${classes.input}`}
+                              />
+                          </div>
+                          <div className="input-container">
+                              <label htmlFor="message" className={classes.label}>
+                                  Message
+                              </label>
+                              <textarea
+                                  placeholder="Type your message...."
+                                  value={message}
+                                  onChange={(e) => setMessage(e.target.value)}
+                                  type="text"
+                                  name="Message"
+                                  className={`form-message ${classes.message}`}
+                              />
+                          </div>
+                          <ReCAPTCHA
+                              sitekey="6LfdXXkpAAAAAJMeiLwPbQUtpcstujf9XE4J8ePL"
+                              onChange={onChange}
+                          />
+
+                          <div className="submit-btn">
+                              <button
+                                  type="submit"
+                                  className={classes.submitBtn}
+                              >
+                                  <p style={{ alignSelf: "end" }}>
+                                      {!success ? "Send" : "Sent"}
+                                  </p>
+                                  <div className="submit-icon">
+                                      {!success ? (
+                                          <>
+                                              <AiOutlineSend className="send-icon" />
+                                          </>
+                                      ) : (
+                                          <>
+                                              <AiOutlineCheckCircle className="success-icon" />
+                                          </>
+                                      )}
+                                  </div>
+                              </button>
+                          </div>
+                      </form>
+                      <Snackbar
+                          anchorOrigin={{
+                              vertical: "top",
+                              horizontal: "center",
+                          }}
+                          open={open}
+                          autoHideDuration={4000}
+                          onClose={handleClose}
+                      >
+                          <SnackbarContent
+                              action={
+                                  <React.Fragment>
+                                      <IconButton
+                                          size="small"
+                                          aria-label="close"
+                                          color="inherit"
+                                          onClick={handleClose}
+                                      >
+                                          <CloseIcon fontSize="small" />
+                                      </IconButton>
+                                  </React.Fragment>
+                              }
+                              style={{
+                                  backgroundColor: errMsg
+                                      ? "#ff0000"
+                                      : success
+                                          ? "#32CD32"
+                                          : "#FFA500",
+                                  color: "white",
+                              }}
+                              message={
+                                  errMsg ||
+                                  (success
+                                      ? "Message sent successfully!"
+                                      : "Warning message here")
+                              }
+                          />
+                      </Snackbar>
+                  </div>
+              </div>
+              <img
+                  src={contactsGreen}
+                  alt="contacts"
+                  className="contacts--img"
+              />
+          </div>
+      </>
+  );
+};
+
+export default Contact;
