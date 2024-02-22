@@ -1,17 +1,11 @@
 import React from "react";
 import { socialsData } from "../contact/SocialData";
 import { makeStyles } from "@material-ui/core/styles";
-import {
-  FaTwitter,
-  FaLinkedinIn,
-  FaGithub,
-  FaInstagram,
-  FaWhatsapp,
-} from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import {SiHashnode} from "react-icons/si"
+
 const useStyles = makeStyles((theme) => ({
   footer: {
-
     width: "100%",
     backgroundColor: "#152b61 !important",
     color: "white",
@@ -29,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
     gap: "1rem",
   },
-
   socialIcon: {
     margin: "0 0.5rem",
     fontSize: "1.5rem",
@@ -45,26 +38,7 @@ const Footer = () => {
   return (
     <footer className={classes.footer}>
       <div className={classes.socialmedia}>
-        {socialsData.whatsapp && (
-          <a
-            href={socialsData.whatsapp}
-            target="_blank"
-            rel="noreferrer"
-            className={classes.socialIcon}
-          >
-            <FaWhatsapp aria-label="WhatsApp" style={{ color: "#25D366" }} />
-          </a>
-        )}
-        {socialsData.twitter && (
-          <a
-            href={socialsData.twitter}
-            target="_blank"
-            rel="noreferrer"
-            className={classes.socialIcon}
-          >
-            <FaTwitter aria-label="Twitter" style={{ color: "#00acee " }} />
-          </a>
-        )}
+        {/* GitHub Icon with Link */}
         {socialsData.github && (
           <a
             href={socialsData.github}
@@ -75,6 +49,7 @@ const Footer = () => {
             <FaGithub aria-label="GitHub" style={{ color: "##1d1a1a" }} />
           </a>
         )}
+        {/* LinkedIn Icon with Link */}
         {socialsData.linkedIn && (
           <a
             href={socialsData.linkedIn}
@@ -85,16 +60,7 @@ const Footer = () => {
             <FaLinkedinIn aria-label="LinkedIn" style={{ color: "#0C63BC" }} />
           </a>
         )}
-        {socialsData.instagram && (
-          <a
-            href={socialsData.instagram}
-            target="_blank"
-            rel="noreferrer"
-            className={classes.socialIcon}
-          >
-            <FaInstagram aria-label="Instagram" style={{ color: "#d62976 " }} />
-          </a>
-        )}
+        {/* Hashnode Icon with Link */}
         {socialsData.hashnode && (
           <a
             href={socialsData.hashnode}

@@ -116,9 +116,3 @@
 .project-card-link:hover {
     background-color: #f263be;
 }
-
-@media screen and  (max-width : 999px){
- .search {
-    width: 80%;
- }
-}
