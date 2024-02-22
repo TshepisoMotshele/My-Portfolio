@@ -18,11 +18,18 @@
 @media screen and (max-width: 800px) {
   .about-parent {
     flex-direction: column;
+    padding: 0 20px 0 40px;
   }
 
   .about-text,
   .about-image {
     width: 100%;
-    padding: 0; /* Reset padding for smaller screens */
   }
+
+  .about-text {
+    
+    margin-bottom: -15rem;
+  }
+
+  
 }

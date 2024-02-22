@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Card } from "semantic-ui-react";
-
+import "./Tool.css"
 import {
   SiVisualstudiocode,
   SiVercel,
@@ -56,7 +56,7 @@ const Tools = () => {
         <Card.Group itemsPerRow={getItemsPerRow()}>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -71,7 +71,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -86,7 +86,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -99,7 +99,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -114,7 +114,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -129,7 +129,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -144,7 +144,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
@@ -159,7 +159,7 @@ const Tools = () => {
           </Card>
           <Card
             raised
-            className="item"
+            className="item-animate"
             style={{
               backgroundColor: "#10265ddc",
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",

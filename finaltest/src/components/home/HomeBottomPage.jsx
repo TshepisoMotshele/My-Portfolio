@@ -1,8 +1,7 @@
 import React from "react";
 import avatar from "../../assets/avatar.svg";
 import Tilt from "react-parallax-tilt";
-import { SiLinktree } from "react-icons/si";
-import { Button } from "@mui/material";
+
 
 const resumeURL ="TshepisoPDF";
 

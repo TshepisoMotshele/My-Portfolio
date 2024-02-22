@@ -116,9 +116,11 @@ body {
 }
 
 .homeBottom {
-  margin-top: 9rem;
+  margin-top: 4rem;
   margin-bottom: 4rem !important;
 }
+
+
 
 .techstack {
   margin: 3rem 0;
@@ -385,6 +387,7 @@ transform: scale(1.02);
   }
   .about-text {
     font-size: 1rem;
+    
   }
 
   .intro-text {
@@ -408,7 +411,11 @@ transform: scale(1.02);
 
   .homepage-avatar {
     width: 100%;
-    margin-top: -18rem !important;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .downloadPdf {
@@ -423,7 +430,7 @@ transform: scale(1.02);
       width: 60%;
     }
     .about-image {
-      width: 35%;
+      width: 40%;
     }
 
       .intro-text {
@@ -437,24 +444,46 @@ transform: scale(1.02);
   }
  .homeBottom-title{
     font-size: 1.5rem !important;
+    text-align: center;
   }
 
   }
 
 
-  @media screen  and(max-width: 399px) {
-
-  .homeBottom-title{
-    font-size: 1.5rem !important;
-  }
-       .homepage-avatar {
-   margin-top: -20rem !important;
-  }
-
-}
-
-}
-
-
-
+  @media screen and (max-width: 499px) {
+    .homepage-avatar {
+      margin-top: -18rem !important;
+      max-width: 250px; 
+    }
   
+    .homeBottom-title {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  @media screen and (max-width: 399px) {
+    .homepage-avatar {
+      margin-top: -19rem !important;
+      max-width: 200px; /* Adjust the maximum width as needed */
+    }
+  
+    .homeBottom-title {
+      font-size: 1rem !important;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .homeBottom {
+      margin-top: 8rem;
+      margin-bottom: 8rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .homeBottom {
+      margin-top: 10rem;
+      margin-bottom: 10rem;
+    }
+  }
+
+}

@@ -3,7 +3,7 @@ import two from "../../assets/Data01/two.png";
 import three from "../../assets/Data01/three.png";
 import four from "../../assets/Data01/four.png";
 import five from "../../assets/Data01/five.png";
-import six from "../../assets/Data01/06.png";
+import vp from "../../assets/Data01/vp.png";
 
 
 export const projectsData = [
@@ -64,18 +64,18 @@ export const projectsData = [
       "This is a simpple single player snake game, with three difficulty levels (Easy,Medium & Hard). there is sound included in the game as well, as the snake eats the food.the game also allows you to play and pause.",
     tags: ["HTML", "CSS3", "JavaScript"],
     code: "#",
-    demo: "#",
+    demo: "https://fluffy-sawine-3cfe7b.netlify.app/",
     image: five,
   },
   {
     id: 6,
-    projectName: "Chat-App",
+    projectName: "VP Website",
     projectDesc:
-      "This app allows real time chat between users",
-    tags: ["ReactJS"],
-    code: "#",
+      "A website of a tech company with services clearly stated. this site also has a game built with JS and a chat-app created with react",
+    tags: ["HTML", "CSS", "JavaScript", "React",],
+    code: "https://github.com/TshepisoMotshele/website",
     demo: "#",
-    image: six,
+    image: vp,
   },
  
 ];

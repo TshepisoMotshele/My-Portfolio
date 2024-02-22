@@ -5,7 +5,7 @@ import "./Projects.css";
 import SingleProjectCard from "./SingleProjectCard";
 
 function Project() {
-  const [search, setSearch] = useState("");
+  const [search,] = useState("");
 
 const filteredArticles = projectsData.filter((project) => {
   const searchTerm = search.toLowerCase();
@@ -32,7 +32,7 @@ const filteredArticles = projectsData.filter((project) => {
           fontWeight: "bold",
         }}
       >
-        My Recent <span style={{ color: "#32CD30" }}>Projects</span>
+        Some of My Recent <span style={{ color: "#32CD30" }}>Projects</span>
       </h1>
       <p>
         These are some of the projects that I have worked on!
