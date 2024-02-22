@@ -196,34 +196,6 @@ const Sidebar = ({ isOpen, onClose }) => {
                 </div>
               </NavLink>
             </Fade>
-
-            <Fade left>
-              <NavLink
-                to="https://drive.google.com/file/d/1pVGq6ihjhc4iYeHqnc9Hc4FNVqm0hnxT/view?usp=drive_link"
-                smooth={true}
-                spy="true"
-                duration={2000}
-              >
-                <div className={classes.drawerItem}>
-                  <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Resume</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink
-                to="#"
-                smooth={true}
-                spy="true"
-                duration={2000}
-              >
-                <div className={classes.drawerItem}>
-                  <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Blogs</span>
-                </div>
-              </NavLink>
-            </Fade>
           </div>
         </div>
       </Drawer>

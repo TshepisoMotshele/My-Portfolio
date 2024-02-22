@@ -5,6 +5,8 @@ import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
 import ReCAPTCHA from "react-google-recaptcha";
+import Lottie from "react-lottie";
+import animationData from "./Animation.json";
 
 
 import { AiOutlineSend, AiOutlineCheckCircle } from "react-icons/ai";
@@ -204,7 +206,7 @@ import emailjs from "emailjs-com";
           <div className="contact">
               <h1
                   style={{
-                      marginTop: "3rem",
+                      marginTop: "1rem",
                       fontFamily: "Fira Code",
                       position: "static",
                   }}
@@ -218,17 +220,30 @@ import emailjs from "emailjs-com";
           </div>
 
           <div className="contacts" id="contacts">
-              <div className="contacts--container">
-                  <h1
+            <h1
                       style={{
                           marginTop: "3rem",
                           fontFamily: "Fira Code",
-                          fontSize: "2.5rem",
+                          fontSize: "5rem",
                           fontWeight: "bold",
                       }}
                   >
                       <span style={{ color: "#32CD30" }}>Hire</span> Me!
                   </h1>
+              <div className="contacts--container">
+                
+                  
+                  <div className="contacts-animation">
+                <Lottie
+            options={{
+              loop: true,
+              autoplay: true,
+              animationData: animationData,
+            }}
+            height={400}
+            width={400}
+          />
+                </div>
 
                   <div className="contacts-form">
                       <form onSubmit={handleContactForm}>
@@ -337,6 +352,7 @@ import emailjs from "emailjs-com";
                           />
                       </Snackbar>
                   </div>
+                  
               </div>
               <img
                   src={contactsGreen}

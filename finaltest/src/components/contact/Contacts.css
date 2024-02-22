@@ -6,6 +6,7 @@
     justify-content: flex-start;
     position: relative;
     margin-top: 3rem;
+    padding-bottom: 0;
  
 }
 
@@ -14,46 +15,42 @@
     position: absolute;
     right: 0;
     bottom: 9rem;
-    width: 600px;
+    width: 400px;
     pointer-events: none;
 }
 
 .contacts--container {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: flex-start;
-    padding: 2rem 6rem 3rem;
-    width: 50%;
-    height: 100%;
-    margin-top: 2rem;
-    margin-left: 45rem;
-    
-}
-
-.contacts--container {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    padding: 2rem; 
-    width: 80%;
-    max-width: 600px; 
+    padding: 2rem; /* Adjust padding as needed */
+    width: 80%; /* Adjust width as needed */
     margin-top: 2rem;
 }
 
 @media screen and (min-width: 800px) {
     .contacts--container {
-        width: 50%; 
-        margin-left: 5rem; 
+        flex-direction: row; /* Arrange items side by side on larger screens */
+        justify-content: space-between; /* Add space between items */
     }
 }
 
 @media screen and (max-width: 600px) {
     .contacts--container {
-        width: 90%; 
-        margin-left: 0; 
+        width: 90%; /* Adjust width as needed */
     }
 }
+
+.contacts-form {
+    flex: 1; /* Allow the form to take up available space */
+    margin-right: 1rem; /* Add some space between the form and the animation */
+}
+
+.contacts-animation {
+    flex: 1; /* Allow the animation to take up available space */
+}
+
 
 .contacts-body {
     display: flex;
@@ -78,7 +75,37 @@
 }
 
 .input-container {
-    width: 100%;
+    width: 60rem;
+    padding-right: 10rem;
+}
+
+.input-container {
+    width: 60rem;
+    padding-right: 10rem;
+}
+
+/* Media query for screens smaller than 768px (e.g., tablets) */
+@media screen and (max-width: 768px) {
+    .input-container {
+        width: 100%; /* Adjust as needed for smaller screens */
+        padding-right: 2rem; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 992px (e.g., laptops) */
+@media screen and (max-width: 992px) {
+    .input-container {
+        width: 80%; /* Adjust as needed for medium-sized screens */
+        padding-right: 5rem; /* Adjust padding for medium-sized screens */
+    }
+}
+
+/* Media query for screens larger than 1200px (e.g., large desktops) */
+@media screen and (min-width: 1200px) {
+    .input-container {
+        width: 80rem; /* Adjust as needed for larger screens */
+        padding-right: 15rem; /* Adjust padding for larger screens */
+    }
 }
 
 
@@ -224,6 +251,8 @@
         font-size: 1rem;
     }
 }
+
+
 
 @media screen and (max-width: 800px) {
     .contacts--container h1 {

@@ -31,23 +31,11 @@ const HomeBottomPage = () => {
           </p>
           <br />
           <p>
-            I am proficient in JavaScript, Python and love{" "}
-            <span style={{ color: "#32CD30" }}>solving problems</span> involving
-            ?????????.
+            I am reliable to work along and i am also good at{" "}
+            <span style={{ color: "#32CD30" }}>Collaboratory</span> work.
           </p>
           <br />
-          <p>
-            I'm also an active participant in various{" "}
-            <span style={{ color: "#32CD30" }}>open source programs </span> such
-            as{" "}
-            <span style={{ color: "#32CD30" }}>
-              GSSOC, SSOC, and Hacktoberfest{" "}
-            </span>
-            I contributed 9 successful pull requests to different projects
-            during recent{" "}
-            <span style={{ color: "#32CD30" }}>Hacktoberfest programe</span> and
-            earned rewards and Swags.
-          </p>
+          
           <br />
           <p>
             I love making side projects and learn about new{" "}
