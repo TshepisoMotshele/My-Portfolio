@@ -9,8 +9,8 @@ function Experience() {
       id: 1,
       company: "ABSA Younglings",
       jobtitle: "Junior fullstack Developer",
-      startYear: "May 2023 ",
-      endYear: "Oct 2023",
+      startYear: "Jan 2024 ",
+      endYear: "Jan 2025",
       links:
         "#",
     },
@@ -18,8 +18,8 @@ function Experience() {
       id: 2,
       company: "CapaCiTi",
       jobtitle: "Software Development Intern",
-      startYear: "Sep 2022 ",
-      endYear: " Apr 2023",
+      startYear: "April 2023 ",
+      endYear: " Jan 2024",
       links:
         "#",
     },
