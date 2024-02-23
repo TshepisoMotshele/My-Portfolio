@@ -97,7 +97,7 @@
     .input-container {
         width: 80%; /* Adjust as needed for medium-sized screens */
         padding-right: 5rem; /* Adjust padding for medium-sized screens */
-    }
+    } 
 }
 
 /* Media query for screens larger than 1200px (e.g., large desktops) */

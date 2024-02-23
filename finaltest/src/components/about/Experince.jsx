@@ -12,16 +12,16 @@ function Experience() {
       startYear: "May 2023 ",
       endYear: "Oct 2023",
       links:
-        "https://drive.google.com/file/d/1vfzaNxc0kb06VoIDoxsadx4uPlyIC3dT/view",
+        "#",
     },
     {
       id: 2,
-      company: "Pepcoding Education (OPC) Private Ltd.",
+      company: "CapaCiTi",
       jobtitle: "Software Development Intern",
       startYear: "Sep 2022 ",
       endYear: " Apr 2023",
       links:
-        "https://drive.google.com/file/d/1WExV0iHcNiVC8No0Y6f5PMmRDJ-lrtTc/view?usp=drive_link",
+        "#",
     },
   
   ];
