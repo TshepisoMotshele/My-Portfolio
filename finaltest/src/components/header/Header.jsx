@@ -93,11 +93,7 @@ const Header = () => {
               <Sidebar isOpen={sideMenuOpen} onClose={handleCloseSideMenu} />
             )}
           </Box>
-          <a href="/"
           
-          >
-            <img src={logo} alt="logo" className="logo-img2" />
-          </a>
 
           <Typography
             variant="h5"

@@ -39,7 +39,7 @@
     padding: 1.9rem 2.5rem;
     font-weight: 500;
     font-size: 0.9rem;
-    background-color: #2bc1dbdc;
+    background-color: #0a0b6bdc;
     box-shadow: inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060;
     text-shadow: 2px 2px 1px #000000;
 }
@@ -107,7 +107,7 @@
 .project-card-link {
     display: inline-block;
     padding: 0.5rem 1rem;
-    background-color: #2bc1dbdc;
+    background-color: #0a0b6bdc;
     color: #fff;
     border-radius: 20px;
     transition: all 0.3s ease-in-out;
