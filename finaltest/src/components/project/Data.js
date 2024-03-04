@@ -19,7 +19,7 @@ export const projectsData = [
       
     ],
     code: "https://github.com/TshepisoMotshele/LemaseGroup-Website",
-    demo: "https://lemase-group.netlify.app/",
+    demo: "https://lemase-group.com/",
     image: one,
   },
   {

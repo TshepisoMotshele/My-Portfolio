@@ -211,11 +211,11 @@ import emailjs from "emailjs-com";
                       position: "static",
                   }}
               >
-                  Have a <span style={{ color: "#32CD30" }}>Question</span> on your
+                  Do you have a <span style={{ color: "#32CD30" }}>Question</span> on your
                   mind??
               </h1>
               <p style={{ textAlign: "center" }}>
-                  Or just want to discuss a project? Contact Me!!
+                  Or just want to discuss a project?
               </p>
           </div>
 
@@ -228,7 +228,7 @@ import emailjs from "emailjs-com";
                           fontWeight: "bold",
                       }}
                   >
-                      <span style={{ color: "#32CD30" }}>Hire</span> Me!
+                      <span style={{ color: "#32CD30" }}>Reach</span> Me!
                   </h1>
               <div className="contacts--container">
                 
@@ -252,7 +252,7 @@ import emailjs from "emailjs-com";
                                   Name
                               </label>
                               <input
-                                  placeholder="John Doe"
+                                  placeholder="your name"
                                   value={name}
                                   onChange={(e) => setName(e.target.value)}
                                   type="text"
@@ -265,7 +265,7 @@ import emailjs from "emailjs-com";
                                   Email
                               </label>
                               <input
-                                  placeholder="John@doe.com"
+                                  placeholder="your email address"
                                   value={email}
                                   onChange={(e) => setEmail(e.target.value)}
                                   type="email"

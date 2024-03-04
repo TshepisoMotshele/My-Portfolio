@@ -75,7 +75,7 @@ const Footer = () => {
       <div
         className={`${classes.footerText} text-sm text-gray-500 sm:text-center dark:text-gray-400 footer-left-text`}
       >
-        Developed by Tshepiso Motshelee
+        Developed by Tshepiso Motshele
       </div>
     </footer>
   );

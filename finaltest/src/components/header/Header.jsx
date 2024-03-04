@@ -54,9 +54,7 @@ const Header = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <a href="/">
-            <img src={logo} alt="logo" className="logo-img" />
-          </a>
+          
 
           <Typography
             variant="h6"
